@@ -72,3 +72,8 @@ Thumbs.db
 
 # Ignore the wwwroot content folder
 wwwroot/
+/.vs
+/BlogApp.Api/bin/Debug/net8.0/CoverletSourceRootsMapping_BlogApp.Api
+/BlogApp.Api/obj/Debug/net8.0/BlogApp.Api.csproj.AssemblyReference.cache
+/BlogApp.Api/obj/Debug/net8.0/BlogApp.Api.AssemblyInfoInputs.cache
+/BlogApp.Api/obj/Debug/net8.0/BlogApp.Api.AssemblyInfo.cs
