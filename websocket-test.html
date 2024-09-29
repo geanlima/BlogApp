@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Test</title>
+    <style>
+        #messages {
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-height: 400px;
+            overflow-y: scroll;
+            width: 50%;
+            margin: 20px;
+        }
+        .message {
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando WebSocket</h1>
+    <div id="messages"></div>
+
+    <script>
+        const wsUrl = `ws://localhost:5025/ws`;
+        const ws = new WebSocket(wsUrl);
+
+        ws.onopen = () => {
+            console.log("Conectado ao WebSocket");
+        };
+
+        ws.onmessage = (event) => {
+            const messagesDiv = document.getElementById("messages");
+            const messageElement = document.createElement("div");
+            messageElement.classList.add("message");
+            messageElement.textContent = event.data;
+            messagesDiv.appendChild(messageElement);
+        };
+
+        ws.onclose = () => {
+            console.log("Conexão WebSocket fechada");
+        };
+
+        ws.onerror = (error) => {
+            console.error("Erro no WebSocket", error);
+        };
+    </script>
+</body>
+</html>

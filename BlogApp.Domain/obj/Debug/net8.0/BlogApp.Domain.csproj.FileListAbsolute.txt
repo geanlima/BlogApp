@@ -1,0 +1,14 @@
+C:\Projetos\GSL\BlogApp\BlogApp.Domain\bin\Debug\net8.0\BlogApp.Domain.deps.json
+C:\Projetos\GSL\BlogApp\BlogApp.Domain\bin\Debug\net8.0\BlogApp.Domain.dll
+C:\Projetos\GSL\BlogApp\BlogApp.Domain\bin\Debug\net8.0\BlogApp.Domain.pdb
+C:\Projetos\GSL\BlogApp\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\GSL\BlogApp\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.AssemblyInfoInputs.cache
+C:\Projetos\GSL\BlogApp\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.AssemblyInfo.cs
+C:\Projetos\GSL\BlogApp\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\GSL\BlogApp\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.dll
+C:\Projetos\GSL\BlogApp\BlogApp.Domain\obj\Debug\net8.0\refint\BlogApp.Domain.dll
+C:\Projetos\GSL\BlogApp\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.pdb
+C:\Projetos\GSL\BlogApp\BlogApp.Domain\obj\Debug\net8.0\ref\BlogApp.Domain.dll
+C:\Projetos\gsl\BlogApp\TestResults\BlogApp.Domain.deps.json
+C:\Projetos\gsl\BlogApp\TestResults\BlogApp.Domain.dll
+C:\Projetos\gsl\BlogApp\TestResults\BlogApp.Domain.pdb
