@@ -1,6 +1,7 @@
 ﻿using BlogApp.Application.DTOs.Requests;
 using BlogApp.Application.DTOs.Responses;
 using BlogApp.Application.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogApp.Api.Controllers;
@@ -26,6 +27,7 @@ public class UserController : ControllerBase
         return Ok(user);
     }
 
+    [Authorize]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<UserResponse>>> GetAllUsers()
     {
@@ -40,6 +42,7 @@ public class UserController : ControllerBase
         return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
     }
 
+    [Authorize]
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateUser(int id, [FromBody] UserRequest request)
     {
@@ -47,6 +50,7 @@ public class UserController : ControllerBase
         return NoContent();
     }
 
+    [Authorize]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteUser(int id)
     {

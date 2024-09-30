@@ -21,6 +21,12 @@ namespace BlogApp.Application.Services
 
         public async Task<UserResponse> CreateUserAsync(UserRequest request)
         {
+            var existingUser = await _userRepository.GetByUsernameAsync(request.Username);
+            if (existingUser != null)
+            {
+                throw new ArgumentException("Nome de usuário já existe. Por favor, escolha outro nome.");
+            }
+
             var user = new User(request.Username, request.Email, HashPassword(request.Password));
             await _userRepository.AddAsync(user);
             return _mapper.Map<UserResponse>(user);
